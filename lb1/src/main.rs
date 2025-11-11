@@ -1,12 +1,12 @@
 use std::f64;
 //use std::fmt;
 
-// Функція y(x)
+
 fn y(x: f64) -> f64 {
     (1.0 + 2.0 * x * x) * f64::exp(x * x)
 }
 
-// Ряд із n членів
+
 fn s_n(x: f64, n: usize) -> f64 {
     let mut sum = 0.0;
     for i in 0..=n {
@@ -16,7 +16,7 @@ fn s_n(x: f64, n: usize) -> f64 {
     sum
 }
 
-// Ряд із точністю eps
+
 fn s_eps(x: f64, eps: f64) -> f64 {
     let mut sum = 0.0;
     let mut i = 0;
@@ -31,7 +31,7 @@ fn s_eps(x: f64, eps: f64) -> f64 {
     sum
 }
 
-// Обчислення факторіалу
+
 fn factorial(n: u64) -> u64 {
     (1..=n).product::<u64>().max(1)
 }
